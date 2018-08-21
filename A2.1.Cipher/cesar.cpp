@@ -1,32 +1,12 @@
-#include <iostream>
-#include <string>
+#include "cesar.h"
 
-using namespace std;
+int main()
+{
+    string text="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    int s = 3;
+    cout << "Text : " << text;
+    cout << "\nShift: " << s;
+    cout << "\nCipher: " << encrypt(text, s) << endl;
 
-#define LENGTH 300
-
-int main(int argc, char const *argv[]) {
-  char texto[LENGTH] = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ", ch;
-  int key = 3;
-
-  for(int i = 0; texto[i] != '\0'; ++i){
-    ch = texto[i];
-    if(ch >= 'a' && ch <= 'z'){
-      ch = ch - key;
-      if(ch < 'a'){
-        ch = ch + 'z' - 'a' + 1;
-      }
-      texto[i] = ch;
-    }
-    else if(ch >= 'A' && ch <= 'Z'){
-      ch = ch - key;
-      if(ch > 'a'){
-        ch = ch + 'Z' - 'A' + 1;
-      }
-      texto[i] = ch;
-    }
-  }
-	
-  cout << endl << texto << endl;
-  return 0;
+    return 0;
 }
