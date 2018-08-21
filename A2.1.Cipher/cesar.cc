@@ -4,7 +4,7 @@
 string text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ", otra = "THISISCOMPLICATED", otra2 = "THISISEASY";
 
 namespace {
-  
+
   TEST(CesarTest, DiferentShifts) {
     EXPECT_EQ("DEFGHIJKLMNOPQRSTUVWXYZABC", encrypt(text, 3));
     EXPECT_EQ("IJKLMNOPQRSTUVWXYZABCDEFGH", encrypt(text, 8));
