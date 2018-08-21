@@ -1,14 +1,18 @@
-#include <iostream>
+#include "vigenere.h"
 
+int main()
+{
+    string str = "GEEKSFORGEEKS";
+    string keyword = "AYUSH";
 
-char vigenereConvert(char letra){
+    string key = generateKey(str, keyword);
+    string cipher_text = cipherText(str, key);
 
-}
+    cout << "Ciphertext : "
+         << cipher_text << "\n";
 
-int main(int argc, char const *argv[]) {
-
-
-
-
-  return 0;
+    cout << "Original/Decrypted Text : "
+         << originalText(cipher_text, key)
+         << endl;
+    return 0;
 }
