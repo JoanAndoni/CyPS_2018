@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -10,10 +11,6 @@ int read_file(char texto[LENGTH])
 	if ((file = fopen("encriptado.txt","r")) == NULL) {
 		return 1;
   }
-  fscanf(file, "%s", texto);
-  cout << texto << endl;
-  fscanf(file, "%s", texto);
-  cout << texto << endl;
   fscanf(file, "%s", texto);
   cout << texto << endl;
   fclose(file);
