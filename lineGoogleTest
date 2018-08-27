@@ -1,1 +1,1 @@
-g++ -std=c++11 -isystem /googletest/googletest/include/ -pthread /googletest/googletest/make/gtest_main.a test.cc -o out
+g++ -std=c++11 -isystem /googletest/googletest/include/ -pthread /googletest/googletest/make/gtest_main.a [FILE.CC] -o [OUTPUT]
