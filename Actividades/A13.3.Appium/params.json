@@ -1,0 +1,6 @@
+{
+        "platformName": "Linux",
+        "deviceName": "Linux",
+        "app": "atom",
+        "noReset": true
+}
